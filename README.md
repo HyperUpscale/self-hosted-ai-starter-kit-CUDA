@@ -9,9 +9,11 @@
 
 ONLY UPDATED THE DOCKER COMPOSE FILE SO IT WILL INSTALL EVERYTHING
 
+
 Thanks to 
 https://dev.to/ajeetraina/running-ollama-with-docker-compose-and-gpus-lkn
-
+for the YML update
+And Deepseek chat for applying it :)
 
 This is a GPU-optimized fork of the **Self-hosted AI Starter Kit**, designed for CUDA-enabled systems. It combines n8n, Ollama, Qdrant, and PostgreSQL to create a powerful local AI development environment.
 
@@ -37,10 +39,12 @@ This is a GPU-optimized fork of the **Self-hosted AI Starter Kit**, designed for
 ### For CUDA GPU users
 
 ```bash
-git clone https://github.com/your-repo/self-hosted-ai-starter-kit.git
+git clone https://github.com/HyperUpscale/self-hosted-ai-starter-kit.git
 cd self-hosted-ai-starter-kit
-docker compose --profile gpu-nvidia up
+docker compose up
 ```
+
+
 ## ⚡️ Quick Start
 
 1. Open <http://localhost:5678/> in your browser to set up n8n. You’ll only
