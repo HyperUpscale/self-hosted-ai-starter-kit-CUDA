@@ -6,6 +6,10 @@
 2. Enable Docker to access the CUDA https://runs-on.com/blog/3-how-to-setup-docker-with-nvidia-gpu-support-on-ubuntu-22/
 3. copy the YML file and run: 'docker compose up'
 
+Check with:
+' ollama list ' if the models have been dowmloaded. If not you have to run this to pull the models with one line
+
+'docker exec ollama ollama pull nomic-embed-text && docker exec ollama ollama pull llama3.2'
 
 ONLY UPDATED THE DOCKER COMPOSE FILE SO IT WILL INSTALL EVERYTHING
 
