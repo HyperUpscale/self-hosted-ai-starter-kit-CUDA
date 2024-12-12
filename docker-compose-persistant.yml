@@ -102,20 +102,20 @@ services:
       - qdrant_storage:/qdrant/storage
 
   ollama:
-      <<: *service-ollama
-      deploy:
-        resources:
-          reservations:
-            devices:
-            - driver: nvidia
-              capabilities: ["gpu"]
-              count: all
+    <<: *service-ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: ["gpu"]
+            count: all
     volumes:
       - ollama:/root/.ollama
     restart: always
-        ports:
-      - "11434:11434"  # Expose port 11434 to 0.0.0.0
-
+    ports:
+      - "11434:11434" 
+      
   ollama-pull-llama-cpu:
     profiles: ["cpu"]
     <<: *init-ollama
