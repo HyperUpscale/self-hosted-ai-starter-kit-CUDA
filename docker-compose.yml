@@ -116,7 +116,7 @@ services:
     volumes:
       - ollama:/root/.ollama
     restart: always
-        ports:
+    ports:
       - "11434:11434"  # Expose port 11434 to 0.0.0.0
 
   ollama-pull-llama-cpu:
