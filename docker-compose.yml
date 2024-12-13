@@ -104,6 +104,7 @@ services:
 
   ollama:  # Updated service definition
     container_name: ollama
+    networks: ['demo']
     image: ollama/ollama  # Replace with specific Ollama version if needed
     deploy:
       resources:
